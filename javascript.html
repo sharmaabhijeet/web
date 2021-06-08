@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+	<style>
+	h1{
+color:red;
+background:yellow;
+padding:2px center;
+width:50%;
+margin:2px;
+}
+</style>
+ </head>
+<body>
+<h1>hello bhai log kese ho</h1>
+<p id="demo">i am abhijeet sharma kyu m nhi darta is liye go ahead and keep learnig</p>
+<script>
+	function rahim() {
+		document.getElementById("demo").style.fontSize="32px";
+		document.getElementById("demo").style.color="grey";
+		document.getElementById("demo").style.background="pink";
+		// body...
+	}
+	function raM(sw) {
+		var pic;
+		if (sw == 0) {
+			pic="b1.gif"
+		}
+		else{
+			pic="b2.gif"
+		}
+		document.getElementById('myimage').src=pic;
+		// body...
+	}
+</script>
+<p>
+	<button type="button" onclick="rahim()">click me</button>
+</p>
+	<img id="myimage" src="b1.gif" height="180" width="100">
+	<p>
+	<button type="button" onclick="raM(1)">bulb on</button>
+	<button type="button" onclick="raM(0)">bulb off</button>
+</p>
+</body>
+</html>

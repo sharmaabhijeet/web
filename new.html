@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		java
+	</title>
+</head>
+<style type="text/css">
+	.bhai{
+		height: 150px;
+		width: 100px;
+		margin-left: 50px;
+	}
+</style>
+<body>
+<h1>using java script </h1>
+
+
+	<script type="text/javascript">
+		function ramu(ab) {
+			var pic;
+			if(ab==0)
+			{
+				pic="b2.gif"
+			}
+			else
+			{
+				pic="b1.gif"
+			}
+			document.getElementById('image1').src=pic;
+
+			// body...
+		}
+		function raam() {
+			document.getElementById("raman").style.fontSize="34px";
+			document.getElementById("raman").style.color="yellow";
+			document.getElementById("raman").style.background="black";
+			document.getElementById("raman").marquee;
+			// body...
+		}
+	</script>
+		<img  id="image1" src="b1.gif">
+	<p>
+<button type="button" onclick="ramu(0)">               light on</button>
+<button type="button" onclick="ramu(1)">              light off</button>
+</p>
+
+<p id="raman"> hey gays my name is abhijeet and trying to make javascript
+</p>
+<p> 
+	<button type="button" onclick="raam()"> click her for change style
+	</button>
+</p>
+</body>
+</html>
