@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="ab.css">
+    </head>
+    <body>
+        <h1>progress Bar With Lable </h1>
+        <div class="myprogress">
+            <div id="mybar">
+                <div id="label">10%</div>
+            </div>
+        </div>
+        <br>
+        <button class="abs" onclick="move()">clic here </button>
+        <script>
+            function move() {
+                var elem=document.getElementById("mybar");
+                var width =10;
+                var id = setInterval(frame,10);
+                function frame() {
+                    if(width>=100)
+                    {clearInterval(id);}
+                    else{
+                        width++;
+                        elem.style.width=width+'%';
+                        document.getElementById("label")
+                        .innerHTML=width*1+'%';
+                    }
+                }
+                
+            }
+        </script>
+      </body>
+</html>
